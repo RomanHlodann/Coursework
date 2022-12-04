@@ -140,11 +140,10 @@ public class DB {
                         tariff.getInt("minutesAbroad"), tariff.getString("limitTopApps"),
                         tariff.getDouble("price"), tariff.getString("timeAction"));
 
-                case "Maximum tariff": return new MaximumTariff(tariff.getInt("gbOfInternet"),
+                case "Maximum Tariff": return new MaximumTariff(tariff.getInt("gbOfInternet"),
                         tariff.getInt("minutesWithOtherNetworks"), tariff.getDouble("price"),
                         tariff.getString("timeAction"));
-
-                case "Annual tariff": return new StartTariff(tariff.getInt("gbOfInternet"),
+                case "Annual Tariff": return new StartTariff(tariff.getInt("gbOfInternet"),
                         tariff.getInt("minutesAbroad"), tariff.getDouble("price"));
             }
         } catch (SQLException e) {

@@ -12,7 +12,7 @@
     <children>
         <Pane prefHeight="152.0" prefWidth="1059.0" style="-fx-background-color: #61D4C3;">
             <children>
-                <Label layoutX="412.0" layoutY="41.0" text="MobileTariffs" textFill="WHITE">
+                <Label layoutX="411.0" layoutY="41.0" text="MobileTariffs" textFill="WHITE">
                     <font>
                         <Font name="System Bold Italic" size="48.0" />
                     </font>
@@ -24,39 +24,39 @@
                 </Button>
             </children>
         </Pane>
-        <TextField fx:id="inpInternet" layoutX="143.0" layoutY="273.0" prefHeight="40.0" prefWidth="402.0" promptText="gbOfInternet" style="-fx-background-color: #242F41;">
+        <TextField fx:id="inpInternet" layoutX="143.0" layoutY="273.0" prefHeight="40.0" prefWidth="402.0" promptText="gbOfInternet" style="-fx-alignment: #FAFAFA;">
             <font>
                 <Font size="19.0" />
             </font>
         </TextField>
-        <Label layoutX="424.0" layoutY="185.0" text="Maximum Tariff" textFill="WHITE">
+        <Label layoutX="420.0" layoutY="188.0" text="Maximum Tariff" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="36.0" />
             </font>
         </Label>
-        <TextField fx:id="inpMinWithOthNetw" layoutX="561.0" layoutY="273.0" prefHeight="40.0" prefWidth="402.0" promptText="minutesWithOtherNetwork" style="-fx-background-color: #242F41;">
+        <TextField fx:id="inpMinWithOthNetw" layoutX="570.0" layoutY="273.0" prefHeight="40.0" prefWidth="402.0" promptText="minutesWithOtherNetwork">
             <font>
                 <Font size="19.0" />
             </font>
         </TextField>
-        <Button fx:id="bttnAdd" layoutX="428.0" layoutY="399.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="266.0" style="-fx-background-color: #242F41; -fx-border-color: #FAFAFA;" text="Add" textFill="WHITE">
+        <Button fx:id="bttnAdd" layoutX="441.0" layoutY="405.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="234.0" style="-fx-background-color: #242F41; -fx-border-color: #FAFAFA;" text="Add" textFill="WHITE">
             <font>
-                <Font name="System Bold" size="29.0" />
+                <Font size="29.0" />
             </font>
         </Button>
-        <TextField fx:id="inpPrice" layoutX="561.0" layoutY="334.0" prefHeight="40.0" prefWidth="402.0" promptText="price" style="-fx-background-color: #242F41;">
+        <TextField fx:id="inpPrice" layoutX="570.0" layoutY="334.0" prefHeight="40.0" prefWidth="402.0" promptText="price">
             <font>
                 <Font size="19.0" />
             </font>
         </TextField>
-        <TextField fx:id="inpTimeAction" layoutX="143.0" layoutY="334.0" prefHeight="40.0" prefWidth="402.0" promptText="timeAction" style="-fx-background-color: #242F41;">
+        <TextField fx:id="inpTimeAction" layoutX="143.0" layoutY="334.0" prefHeight="40.0" prefWidth="402.0" promptText="timeAction">
             <font>
                 <Font size="19.0" />
             </font>
         </TextField>
-      <Line endX="252.0" layoutX="252.0" layoutY="313.0" startX="-100.0" stroke="WHITE" />
-      <Line endX="252.0" layoutX="674.0" layoutY="312.0" startX="-100.0" stroke="WHITE" />
-      <Line endX="252.0" layoutX="252.0" layoutY="375.0" startX="-100.0" stroke="WHITE" />
-      <Line endX="252.0" layoutX="674.0" layoutY="374.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="252.0" layoutX="253.0" layoutY="313.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="252.0" layoutX="670.0" layoutY="313.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="252.0" layoutX="253.0" layoutY="373.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="252.0" layoutX="670.0" layoutY="374.0" startX="-100.0" stroke="WHITE" />
     </children>
 </AnchorPane>

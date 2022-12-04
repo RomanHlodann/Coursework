@@ -118,7 +118,7 @@ public class TariffController {
             if (!fdMinPrice.getText().equals("") || !fdMaxPrice.getText().equals("")) {
                 try{
                     tariffs = FilterTariffs.filterTariffsByPrice(tariffs,
-                            parseToDouble(fdMinPrice), parseToDouble(fdMaxPrice));
+                            fdMinPrice.getText(), fdMaxPrice.getText());
                 } catch (NullPointerException e){
                     break;
                 }
@@ -130,7 +130,7 @@ public class TariffController {
             if (!fdMinTD.getText().equals("") || !fdMaxTD.getText().equals("")) {
                 try{
                     tariffs = FilterTariffs.filterTariffsByDurationTime(tariffs,
-                            parseToTimeDuration(fdMinTD), parseToTimeDuration(fdMaxTD));
+                            fdMinTD.getText(), fdMaxTD.getText());
                 } catch (NullPointerException e){
                     return;
                 }
@@ -158,26 +158,6 @@ public class TariffController {
             MainController.mainController.openNewScene("/Main/MainFXML/User.fxml");
         });
         return bttn;
-    }
-    public double parseToDouble(TextField text){
-        String value = text.getText();
-        if(value.equals(""))
-            return 0;
-        if(Check.checkDouble(value, 1500)){
-            return Double.parseDouble(value);
-        }
-        text.setStyle("-fx-border-color: #ff0000");
-        throw new NullPointerException();
-    }
-    public String parseToTimeDuration(TextField text){
-        String value = text.getText();
-        if(value.equals(""))
-            return "1 day";
-        if(Check.checkTimeDuration(value)){
-            return value;
-        }
-        text.setStyle("-fx-border-color: #ff0000");
-        throw new NullPointerException();
     }
     public void setTariffs(){
         tariffs = new ArrayList<BaseTariff> (CurrentValues.company.getTariffs());
