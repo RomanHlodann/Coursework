@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1059.0" style="-fx-background-color: #242F41;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainControllers.TariffController">
+    <children>
+        <Pane layoutX="-3.0" layoutY="22.0" prefHeight="103.0" prefWidth="1065.0" style="-fx-background-color: #61D4C3;">
+            <children>
+                <Label layoutX="51.0" layoutY="25.0" text="Tariffs" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="bttnGetBack" layoutX="935.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-color: #61D4C3;" text="Get Back" textFill="#fcfcfc">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="bttnAddTariff" layoutX="43.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #61D4C3;" text="Add tariff" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+        <Label layoutX="399.0" layoutY="559.0" text="In order to remove click on checkbox" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+      <Label layoutX="401.0" layoutY="584.0" text="To see users click on appropriate tariff" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="922.0" layoutY="141.0" text="Filter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="-38.0" endY="202.0" layoutX="888.0" layoutY="221.0" startX="-38.0" startY="-93.0" stroke="WHITE" />
+      <TextField fx:id="fdMinPrice" layoutX="865.0" layoutY="225.0" prefHeight="25.0" prefWidth="84.0" promptText="min" />
+      <Label layoutX="930.0" layoutY="187.0" text="Price" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fdMaxPrice" layoutX="959.0" layoutY="225.0" prefHeight="25.0" prefWidth="84.0" promptText="max" />
+      <Label layoutX="899.0" layoutY="262.0" text="Time Duration" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fdMinTD" layoutX="865.0" layoutY="301.0" prefHeight="25.0" prefWidth="182.0" promptText="min" />
+      <TextField fx:id="fdMaxTD" layoutX="865.0" layoutY="338.0" prefHeight="25.0" prefWidth="182.0" promptText="max" />
+      <Button fx:id="bttnApply" layoutX="927.0" layoutY="380.0" mnemonicParsing="false" style="-fx-background-color: #61D4C3;" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="110.0" layoutX="949.0" layoutY="424.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="-64.5" endY="162.0" layoutX="915.0" layoutY="464.0" startX="-64.5" startY="-38.5" stroke="WHITE" />
+      <Button fx:id="bttnSortA" layoutX="891.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #61D4C3;" text="ASC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="901.0" layoutY="440.0" text="Sort By Price" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bttnSortD" layoutX="891.0" layoutY="526.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #61D4C3;" text="DESC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Line endX="110.0" layoutX="951.0" layoutY="571.0" startX="-100.0" stroke="WHITE" />
+      <Button fx:id="bttnReset" layoutX="893.0" layoutY="582.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #61D4C3;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

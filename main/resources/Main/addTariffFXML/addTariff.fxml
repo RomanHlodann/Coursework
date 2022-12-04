@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1059.0" style="-fx-background-color: #242F41;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addTariff.addTariff">
+    <children>
+        <Pane layoutX="-3.0" layoutY="22.0" prefHeight="103.0" prefWidth="1066.0" style="-fx-background-color: #61D4C3;">
+            <children>
+                <Label layoutX="359.0" layoutY="25.0" text="Add tariff to company" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="bttnGetBack" layoutX="934.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-color: #61D4C3;" text="Get Back" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="bttnAddStart" layoutX="870.0" layoutY="232.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #61D4C3;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="59.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Tariff:  gbOfInternet = 50, minutesAbroad = 0, limitTopApps = limited, timeAction = 14 day" wrappingWidth="782.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="59.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optimum Tariff:  minutesEithOtherNetwork = 100, countOfSms = 200" wrappingWidth="782.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="59.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Tariff:  minutesAbroad = 150, limitTopApps = unlimited, countOfSms = 500" wrappingWidth="782.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="59.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annual Tariff:  minutesEithOtherNetwork = 300, limitTopApps = unlimited, countOfSms = 300, timeAction = 1 year" wrappingWidth="741.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="bttnAddOptimum" layoutX="870.0" layoutY="313.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #61D4C3;" text="Optimum" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttnAddMaximum" layoutX="870.0" layoutY="386.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #61D4C3;" text="Maximum" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttnAddAnnual" layoutX="870.0" layoutY="473.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #61D4C3;" text="Annual" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="59.0" layoutY="155.0" text="Types of tariffs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
