@@ -2,10 +2,7 @@ package Main;
 
 import Cooperation.Company;
 import Cooperation.User;
-import Tariff.BaseTariff;
-import Tariff.MaximumTariff;
-import Tariff.OptimumTariff;
-import Tariff.StartTariff;
+import Tariff.*;
 
 import java.sql.*;
 
@@ -143,7 +140,7 @@ public class DB {
                 case "Maximum Tariff": return new MaximumTariff(tariff.getInt("gbOfInternet"),
                         tariff.getInt("minutesWithOtherNetworks"), tariff.getDouble("price"),
                         tariff.getString("timeAction"));
-                case "Annual Tariff": return new StartTariff(tariff.getInt("gbOfInternet"),
+                case "Annual Tariff": return new AnnualTariff(tariff.getInt("gbOfInternet"),
                         tariff.getInt("minutesAbroad"), tariff.getDouble("price"));
             }
         } catch (SQLException e) {
